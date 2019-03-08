@@ -10,7 +10,7 @@ var mapStateToProps = (state) => ({
 });
 
 var mapDispatchToProps = (dispatch) => ({
-  handleSearchChange: (q) => dispatch(handleSearchChange(q))
+  handleSearchInputChange: (q) => dispatch(handleSearchChange(q))
 });
 
 var SearchContainer = connect(
