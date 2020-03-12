@@ -51,17 +51,17 @@ The [Redux Devtools](https://github.com/reduxjs/redux-devtools) allow you to ins
 * Once all of our reducers are written, we need to combine them into a single root reducer using *combineReducers.*
 * Pass the root reducer into createStore to define the store object which contains a Redux state.
 * Read [this article](https://redux.js.org/basics/usage-with-react) to learn about the difference between container components and presentational components.
-* Code out the containers set up for you in the containers directory. These should use the React-Redux .connect method to connect the actions you wrote out earlier with the event handlers passed into each component.(Check out the documentation for the *.connect* method [here](https://react-redux.js.org/) for more information)
-* In the index.js file, import the Provider class from react-redux, and then use it to wrap your <App /> (Check out the documentation for the Provider component [here](https://react-redux.js.org/) for more information)
-* Swap out the components in App.js for the containers you just created. You shouldn't have to pass any props down to these components, as they will be pulled directly from your store thanks to the Provider and .connect setup we completed earlier.
+* Code out the containers set up for you in the *containers* directory. These should use the React-Redux *.connect* method to connect the actions you wrote out earlier with the event handlers passed into each component.(Check out the documentation for the *.connect* method [here](https://react-redux.js.org/) for more information)
+* In the *index.js* file, import the Provider class from react-redux, and then use it to wrap your <App /> (Check out the documentation for the Provider component [here](https://react-redux.js.org/) for more information)
+* Swap out the components in *App.js* for the containers you just created. You shouldn't have to pass any props down to these components, as they will be pulled directly from your store thanks to the *Provider* and *.connect* setup we completed earlier.
 
 **Make your API call play nicely with Redux using Thunk.**
 
 Redux Thunk is a library that allows us to dispatch actions asynchronously. When Thunk is registered as middleware, our actions are able to return not just objects but functions which can do more advanced things (like invoke dispatch themselves!)
 
-* the Redux Thunk module is already installed in this project. However, you'll have to require it in your store.js file.
-* You'll have to use the applyMiddleware method from Redux to allow your store to interpret your thunks. This should be done in your invocation of createStore in store.js.
-* in actions/search.js, write out a thunk to interact with the YouTube API. Remember that instead of returning an object, we will now be able to return a function!
+* the Redux Thunk module is already installed in this project. However, you'll have to require it in your *store.js* file.
+* You'll have to use the *applyMiddleware* method from Redux to allow your store to interpret your thunks. This should be done in your invocation of *createStore* in *store.js.*
+* in *actions/search.js*, write out a thunk to interact with the YouTube API. Remember that instead of returning an object, we will now be able to return a function!
 
 # ADVANCED CONTENT
 Our advanced content is intended to throw you in over your head, requiring you to solve problems with very little support or oversight, much like you would as a mid or senior level engineer. The following problem is no exception, and you may have to do a fair amount of work to get enough context to get started on the problem itself.
