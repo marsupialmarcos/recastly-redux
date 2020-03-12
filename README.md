@@ -86,6 +86,6 @@ R* efactor *searchYouTube* to use the [fetch](https://developer.mozilla.org/en-U
 * [Redux Devtools](https://github.com/zalmoxisus/redux-devtools-extension)
 * [Redux Documentation](https://redux.js.org/) - check out the linked resources in the Just the Basics section, especially React and Redux: An Introduction and Valentino Gagliardi's post
 * [Nice high-level Redux Thunk walkthrough](https://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559)
-[Walkthrough of the basic React-Redux patterns](https://redux.js.org/basics/usage-with-react)
-[YouTube API](https://developers.google.com/youtube/v3/getting-started)
-[Intro to Redux video series by Redux creator Dan Abramov](https://egghead.io/courses/getting-started-with-redux) - at 2hrs of video it may not be the right resource for use during the sprint, but highly recommended to check out when you have the bandwidth for a deep understanding of how the library works
+* [Walkthrough of the basic React-Redux patterns](https://redux.js.org/basics/usage-with-react)
+* [YouTube API](https://developers.google.com/youtube/v3/getting-started)
+* [Intro to Redux video series by Redux creator Dan Abramov](https://egghead.io/courses/getting-started-with-redux) - at 2hrs of video it may not be the right resource for use during the sprint, but highly recommended to check out when you have the bandwidth for a deep understanding of how the library works
