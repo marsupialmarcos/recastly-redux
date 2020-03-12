@@ -21,9 +21,9 @@ We have collected some useful resources, which you are encouraged to consult.
 Webpack is the official bundler for React applications. All React code should be bundled into a single file before being served up to the client. This achieves two aims:
 
 * As our codebase grows, it becomes increasingly cumbersome to manually add script tags to all of our source files to the index.html page. Bundling allows us to only add a single script tag, which references the bundled file.
-* Multiple script tags means multiple requests, and this means more loading time. Serving up one big file rather than dozens of smaller files reduces multiple request cycles. In this sprint, we've given you a pre-built Webpack file. You'll have to install Webpack (using *npm install* to install from *package.json*). Since locally installing webpack saves executables into *node_modules/.bin*, you'll need to run webpack using the npm script we provided for you, *npm run* build (see npm docs for more info). Some useful flags to consider adding to this invocation:
-  * -d: runs Webpack in debug mode, which provides useful error messages to help you understand why Webpack isn't able to bundle your files.
-  * -w: this is the 'watch' flag, and sets webpack to rerun its bundling process every time it detects changes in the source files.
+* Multiple script tags means multiple requests, and this means more loading time. Serving up one big file rather than dozens of smaller files reduces multiple request cycles. In this sprint, we've given you a pre-built Webpack file. You'll have to install Webpack (using *npm install* to install from *package.json*). Since locally installing webpack saves executables into *node_modules/.bin*, you'll need to run webpack using the npm script we provided for you, *npm run build* (see npm docs for more info). Some useful flags to consider adding to this invocation:
+  * *-d:* runs Webpack in debug mode, which provides useful error messages to help you understand why Webpack isn't able to bundle your files.
+  * *-w:* this is the 'watch' flag, and sets webpack to rerun its bundling process every time it detects changes in the source files.
 
 You will experience Webpack more in-depth later on in your Hack-Reactor life, but for now, this is as involved as we need to get.
 
@@ -36,7 +36,7 @@ npm install -g live-server
 ```
 **npm scripts**
 
-Last sprint, you were introduced to [scripting](https://docs.npmjs.com/misc/scripts) in npm. You can continue to use scripting to simplify your life in this sprint, by automating the Webpack process. Consider writing a bundle script, or defining a start script that handles the multiple steps involved with getting your development environment up and running!
+Last sprint, you were introduced to [scripting](https://docs.npmjs.com/misc/scripts) in npm. You can continue to use scripting to simplify your life in this sprint, by automating the Webpack process. Consider writing a *bundle* script, or defining a *start* script that handles the multiple steps involved with getting your development environment up and running!
 
 **Redux DevTools**
 The [Redux Devtools](https://github.com/reduxjs/redux-devtools) allow you to inspect your state in graphical form, and presents changes to state as they happen. They are a useful tool in a Redux developer's toolbox!
